@@ -12,7 +12,7 @@
 
 ---
 
-Is a single page, full stack MERN application that lets you check and compare skiing and snowboarding destinations around the world.
+Open Peaks V2 is a single page, full stack MERN application that lets you check and compare skiing and snowboarding destinations around the world.
 My third and capstone project for Per Scholas Software Engineering Track.
 
 This app is the extended version of my [second project](https://github.com/m-soro/Project_2), where users can create an account, save their favorite destinations in a list where my front end calls an API to show relevant data.
