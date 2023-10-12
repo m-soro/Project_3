@@ -21,29 +21,110 @@ This app is the extended version of my [second project](https://github.com/m-sor
 
 1. Started this project with user authentication - this took the most time.
 
+   - Consists of two routes: logIn and Register
+   - I also took this time to build utilities/data.js, this will supply additional data to Ski resorts API in the frontend.
+
 ---
 
 2. Set up backend
 
 - Set up server - ensuring successful connection with MongoDB
-  - I followed suggested practices in Module 3
-- Set up Schemas - (1) User (2) Mountain
 
-- Set up routes - (1) User (2) Mountain
+  - I followed suggested practices in Module 3
+  - Entry point for backend is src/index.js -> database configurations and routes
+
+- Set up Schemas - (1) User (2) Resorts
+
+  - User has 3 properties:
+    - username - unique
+    - password
+    - savedMountains - an array of type mongoose type ObjectID, that points to **mountains collection**.
+  - Resorts has 3 properties:
+    - listName
+    - moutains - an array of resorts
+    - userOwner - an array of type mongoose type ObjectID, that points to **users collection**.
+  - Export these models to users and mountain routes
+
+- Set up Routes - (1) User (2) Mountain
+  - Used express.Router() organize the routes
+  - Looked into past assignments and labs about RESTFUL routes/INDUCES
+  - I used postman to test all of the routes
 
 ---
 
+3. Set up frontend
+
+- Used best practices learned in Module 2
+- Entry point is src/App.js
+  - Used BrowserRouter to create route paths, used useGetUserName custom hook to pass in the userName currently logged in.
+- Components and Pages:
+  - Auth.js page has Log in and Register components inside.
+  - Auth.js routes is tested first in Postman to verify that it is working.
+  - In CreateData.js I used **Material UI's** form select component to restrict what the user can enter. This is because the Ski Resort API is only restricted to 148 ski resorts.
+  - I then wired this form to the create route in the backend.
+  - Home.js is the **index** page, Dashboard.jsx is the **show** page.
+  - I used material ui to have an image gallery in Home.js.
+  - useLocation is used to pass in state to the **next in line** component when a Link element is clicked. From Home.js --> Dashboard.js.
+  - In Dashboard.js, I used my utilities/data.js to supplement the data coming from the API. This component is the **show** page where users can see each results of their selected resorts in one group. My main idea here is to build a data dashboard.
+
 ### User Stories
+
+- As a user I can:
+  - Sign up
+  - Log in and Log out
+  - Create a list
+  - View a list in detail
+  - Edit list name
+  - Delete a list
 
 ### Challenges
 
+- I spent a lot of time with the user Authentication
+- Passing in data from component to another. Attempted to useContext to hold data but, instead found useLocation() to be able to solve this.
+- Create and Update is tricky. Due to the fact the the API is restricted to 148 Resorts. I did not want the user to just type in what they wanted to track. It must be pre-populated so the API doesn't throw an error.
+- I can re-create another another select input in Edit route but I didnt have enough time. To meet the Full CRUD requirement, users can edit the name of their list.
+- My original plan is to create a data dahsboard, with stats and conditions arranged in a grid using frameworks such as material ui, but I didnt had enough time and I have more pressing priorities.
+- Another challenge is to get the result of the promise of the API, then store the result in useState. I used useEffect and useState like this -> `functionThatRetursAPromise().then((res) => setData(res))`.
+- I try catch block to solve the issue of React re-rendering and sometimes API call returns null.
+- Another challenge, was the result of the API call, its an object nested inside an object inside another object. I used object destructuring to extract layers of data inside the object that is returned by the API.
+
 ### Design
+
+- Design was minimal and clean. I didn't have enough time to spend in styling.
+
+### Technologies Used
+
+- MongoDB
+- Express
+- React
+- NodeJs
+- JavaScript
+- Axios
+- Pico.css
+- Material UI
+- Atom code editor
+- VS code
+- Nelify - frontend deployment
+- Render - backend deployment
 
 ### Limitations and Known Issues
 
+- The supplemental data in utilities/data.js is inconsitent. I plan to correct this as soon as possible.
+- Due to time constrainsts, User is only restricted in editing the name of their list.
+- Re factoring is needed to DRY up the code.
+- There is no catch all route.
+
 ### Future Plans
 
+- Style it
+- Maybe add a "re-order" cards or list feature so that your top priority list is on top.
+- Maybe a community page, where logged in users can leave a comment, buy and sell gears, and interact with each other.
+
 ### Acknowledgements
+
+- The Amazing instructors at Per Scholas: Tishana, Manara and Kasper.
+- All the help that Manara provided.
+- YouTube
 
 ---
 
