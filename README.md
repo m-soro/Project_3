@@ -26,10 +26,10 @@ This app is the extended version of my [second project](https://github.com/m-sor
 2. Set up backend
 
 - Set up server - ensuring successful connection with MongoDB
+  - I followed suggested practices in Module 3
+- Set up Schemas - (1) User (2) Mountain
 
-- Set up Schemas - (1)User (2)Mountain
-
-- Set up routes - (1)User (2)Mountain
+- Set up routes - (1) User (2) Mountain
 
 ---
 
