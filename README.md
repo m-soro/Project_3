@@ -19,53 +19,53 @@ This app is the extended version of my [second project](https://github.com/m-sor
 
 ### Plan/Build
 
-1. Started this project with user authentication - this took the most time.
+1. Started this project with **user authentication** - this took the most time.
 
    - Consists of two routes: logIn and Register
    - I also took this time to build utilities/data.js, this will supply additional data to Ski resorts API in the frontend.
 
 ---
 
-2. Set up backend
+2. **Set up backend**
 
-- Set up server - ensuring successful connection with MongoDB
+- **Set up server** - ensuring successful connection with MongoDB
 
-  - I followed suggested practices in Module 3
+  - I followed **suggested practices in Module 3**
   - Entry point for backend is src/index.js -> database configurations and routes
 
-- Set up Schemas - (1) User (2) Resorts
+- **Set up Schemas** - (1) User (2) Resorts
 
-  - User has 3 properties:
+  - **User has 3 properties**:
     - username - unique
     - password
     - savedMountains - an array of type mongoose type ObjectID, that points to **mountains collection**.
-  - Resorts has 3 properties:
+  - **Resorts has 3 properties**:
     - listName
     - moutains - an array of resorts
     - userOwner - an array of type mongoose type ObjectID, that points to **users collection**.
-  - Export these models to users and mountain routes
+  - **Export** these models to users and mountain routes
 
-- Set up Routes - (1) User (2) Mountain
+- **Set up Routes** - (1) User (2) Mountain
   - Used express.Router() organize the routes
   - Looked into past assignments and labs about RESTFUL routes/INDUCES
-  - I used postman to test all of the routes
+  - I used **Postman** to test all of the routes
 
 ---
 
-3. Set up frontend
+3. **Set up frontend**
 
-- Used best practices learned in Module 2
-- Entry point is src/App.js
+- Used **best practices learned in Module 2**
+- Entry point is _src/App.js_
   - Used BrowserRouter to create route paths, used useGetUserName custom hook to pass in the userName currently logged in.
-- Components and Pages:
+- **Components and Pages**:
   - Auth.js page has Log in and Register components inside.
   - Auth.js routes is tested first in Postman to verify that it is working.
   - In CreateData.js I used **Material UI's** form select component to restrict what the user can enter. This is because the Ski Resort API is only restricted to 148 ski resorts.
   - I then wired this form to the create route in the backend.
   - Home.js is the **index** page, Dashboard.jsx is the **show** page.
-  - I used material ui to have an image gallery in Home.js.
-  - useLocation is used to pass in state to the **next in line** component when a Link element is clicked. From Home.js --> Dashboard.js.
-  - In Dashboard.js, I used my utilities/data.js to supplement the data coming from the API. This component is the **show** page where users can see each results of their selected resorts in one group. My main idea here is to build a data dashboard.
+  - I used _material ui_ to have an image gallery in Home.js.
+  - **useLocation** is used to pass in state to the **next in line** component when a Link element is clicked. From Home.js --> Dashboard.js.
+  - In Dashboard.js, I used my _utilities/data.js_ to supplement the data coming from the API. This component is the **show** page where users can see each results of their selected resorts in one group. My main idea here is to build a data dashboard.
 
 ### User Stories
 
@@ -90,7 +90,7 @@ This app is the extended version of my [second project](https://github.com/m-sor
 
 ### Design
 
-- Design was minimal and clean. I didn't have enough time to spend in styling.
+- **Design was minimal and clean. I didn't have enough time to spend in styling**.
 
 ### Technologies Used
 
@@ -127,6 +127,8 @@ This app is the extended version of my [second project](https://github.com/m-sor
 - YouTube
 
 ---
+
+# CAPSTONE PROJECT REQUIREMENTS:
 
 # MOD 3 : MERN STACK APPLICATION
 
