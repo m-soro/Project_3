@@ -24,11 +24,12 @@ This app is the extended version of my [second project](https://github.com/m-sor
 ---
 
 2. Set up backend
-   2.2 Set up server - ensuring successful connection with MongoDB
 
-   2.3 Set up Schemas - (1)User (2)Mountain
+2.2 Set up server - ensuring successful connection with MongoDB
 
-   2.4 Set up routes - (1)User (2)Mountain
+2.3 Set up Schemas - (1)User (2)Mountain
+
+2.4 Set up routes - (1)User (2)Mountain
 
 ---
 
