@@ -1,12 +1,37 @@
-# Per Scholas Capstone Project
+# Open Peaks V2
 
-## Open Peaks - Version 2
+## [Project Link](https://openpeaks.netlify.app/)
 
 ### [Backend Repo](https://github.com/m-soro/Project_3_backend)
 
 ### [Frontend Repo](https://github.com/m-soro/Project_3_frontend)
 
 ### [Trello Board](https://trello.com/b/xQLtnoxs/project3)
+
+Is a single page, full stack MERN application that lets you check and compare skiing and snowboarding destinations around the world.
+My third and capstone project for Per Scholas Software Engineering Track.
+
+This app is the extended version of my [second project](https://github.com/m-soro/Project_2), where users can create an account, save their favorite destinations in a list where my front end calls an API to show relevant data.
+
+### Plan/Build
+
+1. Started this project with user authentication - this took the most time.
+2. Set up backend
+   2.2 Set up server - ensuring successful connection with MongoDB
+   2.3 Set up Schemas - (1)User (2)Mountain
+   2.4 Set up routes - (1)User (2)Mountain
+
+### User Stories
+
+### Challenges
+
+### Design
+
+### Limitations and Known Issues
+
+### Future Plans
+
+### Acknowledgements
 
 ---
 

@@ -1,28 +1,38 @@
-const axios = require("axios");
+import axios from "axios"
+import {resorts} from "./data.js"
 
-let resort = "stevens";
-
-const options = {
-  method: "GET",
-  url: `https://ski-resorts-and-conditions.p.rapidapi.com/v1/resort/${resort}`,
-  headers: {
-    "X-RapidAPI-Key": "dfd428dbdcmshe06643051b38c0bp1a4bd8jsn59da54a4c468",
-    "X-RapidAPI-Host": "ski-resorts-and-conditions.p.rapidapi.com",
-  },
-};
-
-const getStatistics = async () => {
+const getStatistics = async (resort) => {
+  const options = {
+    method: "GET",
+    url: `https://ski-resorts-and-conditions.p.rapidapi.com/v1/resort/${resort}`,
+    headers: {
+      "X-RapidAPI-Key": "dfd428dbdcmshe06643051b38c0bp1a4bd8jsn59da54a4c468",
+      "X-RapidAPI-Host": "ski-resorts-and-conditions.p.rapidapi.com",
+    },
+  };
   try {
     const response = await axios.request(options);
-    console.log(response.data.data.location); // to get the coordinates
-    console.log(response.data.data.lifts);
-    console.log("from get stats", response.status);
+    // console.log(response.data.data.location); // to get the coordinates
+    console.log(response.data.data.name + " - " + response.data.data.country+ ", " +response.data.data.region  )// to get the resort name;
   } catch (error) {
     console.log("from get stats Error");
   }
 };
 
-getStatistics();
+// getStatistics();
+
+const resortsCopy = [...resorts];
+
+
+
+resortsCopy.forEach((resort, i) => {
+   getStatistics(resort.slug)
+});
+
+
+
+
+
 
 // const opts = {
 //   method: "GET",
