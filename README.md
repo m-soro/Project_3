@@ -1,12 +1,14 @@
 # Open Peaks V2
 
-## [Project Link](https://openpeaks.netlify.app/)
+## [Project Link](https://openpeaks.onrender.com/auth)
 
 ---
 
 ### [Backend Repo](https://github.com/m-soro/Project_3_backend)
 
-### [Frontend Repo](https://github.com/m-soro/Project_3_frontend)
+### [Frontend Repo](https://github.com/m-soro/Project_03)
+
+### ~~[Frontend Repo](https://github.com/m-soro/Project_3_frontend)~~
 
 ### [Trello Board](https://trello.com/b/xQLtnoxs/project3)
 
