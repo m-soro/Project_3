@@ -106,8 +106,8 @@ This app is the extended version of my [second project](https://github.com/m-sor
 - Material UI
 - Atom code editor
 - VS code
-- Nelify - frontend deployment
-- Render - backend deployment
+- ~~Nelify - frontend deployment~~
+- Render - frontend and backend deployment
 
 ### Limitations and Known Issues
 
