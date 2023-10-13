@@ -1,6 +1,8 @@
 # Open Peaks V2
 
-## [Project Link](https://openpeaks.onrender.com/auth)
+## [Project Link](https://openpeaks.onrender.com/)
+
+## [Back Up Link](https://openpeaks.netlify.app)
 
 ---
 
