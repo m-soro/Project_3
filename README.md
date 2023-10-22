@@ -1,8 +1,16 @@
 # Open Peaks V2
 
-## [Project Link](https://openpeaks.onrender.com/)
+<img src="https://github.com/m-soro/m-soro.github.io/blob/main/src/assets/images/openpeaksv2/01.png?raw=true" width="560" height="auto">
+<img src="https://github.com/m-soro/m-soro.github.io/blob/main/src/assets/images/openpeaksv2/02.png?raw=true" width="560" height="auto">
 
-## [Back Up Link](https://openpeaks.netlify.app)
+<img src="https://github.com/m-soro/m-soro.github.io/blob/main/src/assets/images/openpeaksv2/demo.gif?raw=true" width="560" height="auto">
+
+<img src="https://github.com/m-soro/m-soro.github.io/blob/main/src/assets/images/openpeaksv2/04.png?raw=true" width="270" height="auto">
+<img src="https://github.com/m-soro/m-soro.github.io/blob/main/src/assets/images/openpeaksv2/05.png?raw=true" width="270" height="auto">
+
+## [Deployed App Link](https://openpeaks.onrender.com/)
+
+## [Deployed Back Up Link](https://openpeaks.netlify.app)
 
 ---
 
