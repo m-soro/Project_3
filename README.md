@@ -10,7 +10,7 @@
 
 ### [Frontend Repo](https://github.com/m-soro/Project_03)
 
-### ~~[Frontend Repo](https://github.com/m-soro/Project_3_frontend)~~
+### [~~Frontend Repo~~](https://github.com/m-soro/Project_3_frontend)
 
 ### [Trello Board](https://trello.com/b/xQLtnoxs/project3)
 
@@ -38,7 +38,7 @@ This app is the extended version of my [second project](https://github.com/m-sor
   - I followed **suggested practices in Module 3**
   - Entry point for backend is src/index.js -> database configurations and routes
 
-- **Set up Schemas** - (1) User (2) Resorts
+- **Set up Schemas** - (1) User (2) Resorts (3) Resorts Data File
 
   - **User has 3 properties**:
     - username - unique
@@ -48,9 +48,15 @@ This app is the extended version of my [second project](https://github.com/m-sor
     - listName
     - moutains - an array of resorts
     - userOwner - an array of type mongoose type ObjectID, that points to **users collection**.
-  - **Export** these models to users and mountain routes
+  - **Resort Data File has 3 properties**:
+    - label
+    - name
+    - slug
+    - img
+    - map
+  - **Export** these models to auth, mountain , and dataseed routes
 
-- **Set up Routes** - (1) User (2) Mountain
+- **Set up Routes** - (1) User (2) Mountain (3) Resort Dataseed
   - Used express.Router() organize the routes
   - Looked into past assignments and labs about RESTFUL routes/INDUCES
   - I used **Postman** to test all of the routes
@@ -63,6 +69,7 @@ This app is the extended version of my [second project](https://github.com/m-sor
 - Entry point is _src/App.js_
   - Used BrowserRouter to create route paths, used useGetUserName custom hook to pass in the userName currently logged in.
 - **Components and Pages**:
+  - **Latest update**: I moved the helperfile to Mongo DB to make the app as small as possible. This helperfile is then called and stored in a context as soon as user logs in and is available to all components.
   - Auth.js page has Log in and Register components inside.
   - Auth.js routes is tested first in Postman to verify that it is working.
   - In CreateData.js I used **Material UI's** form select component to restrict what the user can enter. This is because the Ski Resort API is only restricted to 148 ski resorts.
