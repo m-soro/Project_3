@@ -115,13 +115,14 @@ This app is the extended version of my [second project](https://github.com/m-sor
 ### Limitations and Known Issues
 
 - ~~The supplemental data in utilities/data.js is inconsitent. I plan to correct this as soon as possible.~~
+- ~~There is no catch all route.~~
 - Due to time constrainsts, User is only restricted in editing the name of their list.
 - Re factoring is needed to DRY up the code.
-- ~~There is no catch all route.~~
 
 ### Future Plans
 
 - ~~Style it~~
+- ~~Remove the helper file locally and transfer this to MongoDB to make the app as small as possible.~~
 - Maybe add a "re-order" cards or list feature so that your top priority list is on top.
 - Maybe a community page, where logged in users can leave a comment, buy and sell gears, and interact with each other.
 
