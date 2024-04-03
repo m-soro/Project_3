@@ -123,7 +123,7 @@ This app is the extended version of my [second project](https://github.com/m-sor
 - Material UI
 - Atom code editor
 - VS code
-- ~~Nelify - frontend deployment~~
+- ~~Netlify - frontend deployment~~
 - Render - frontend and backend deployment
 
 ### Limitations and Known Issues
@@ -142,7 +142,7 @@ This app is the extended version of my [second project](https://github.com/m-sor
 
 ### Acknowledgements
 
-- The Amazing instructors at Per Scholas: Tishana, Manara and Kasper.
+- The amazing instructors at Per Scholas: Tishana, Manara and Kasper.
 - All the help that Manara provided.
 - YouTube
 
