@@ -142,7 +142,7 @@ This app is the extended version of my [second project](https://github.com/m-sor
 
 ### Acknowledgements
 
-- The incredible instructors at Per Scholas: Tishana, Manara and Kasper.
+- The amazing instructors at Per Scholas: Tishana, Manara and Kasper.
 - All the help that Manara provided.
 - YouTube
 
